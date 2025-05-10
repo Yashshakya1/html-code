@@ -38,11 +38,12 @@ padding: 50px;
 }
 
 .text-section {
-max-width: 50%;
+max-width: 40%;
+font-size: medium;
 }
 
 h2 {
-font-size: 48px;
+font-size: 70px;
 margin: 20px 0;
 }
 
@@ -62,7 +63,15 @@ background: #555;
 .image-section img {
 width: 70%;
 border-radius: 10px;
-
+display: block;
+transition: .3s;
+}
+.image-section {
+    overflow: hidden;
+    
+}
+.image-section :hover{
+    scale: 1.1;
 }
 
 footer {
