@@ -36,7 +36,7 @@ text-decoration: none;
 .content {
 display: flex;
 justify-content: space-between;
-padding: 50px;
+padding: 60px;
 }
 
 .text-section {
@@ -46,7 +46,11 @@ font-size: medium;
 
 h2 {
 font-size: 70px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 margin: 20px 0;
+}
+.text-section p{
+    line-height: 1.5;
 }
 
 .explore-btn, .video-btn {
@@ -59,10 +63,12 @@ cursor: pointer;
 }
 
 .explore-btn:hover, .video-btn:hover {
-background: #555;
+background: #4e4545;
+filter: drop-shadow(0 0 10px #eeeeee);
+border-radius: 20px;
 }
 
-.image-section img {
+.image-section img {    
 width: 70%;
 border-radius: 10px;
 display: block;
@@ -73,11 +79,97 @@ transition: .3s;
     
 }
 .image-section :hover{
-    scale: 1.1;
+    scale: 1.2;
+}
+#page1{
+    text-align:right;
+padding: 20px;
+background: #111;
 }
 
 footer {
 text-align:right;
 padding: 20px;
 background: #111;
+}
+
+.content1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 73px;
+    }
+    .text-section1 h1{
+        font-size: 65px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .content1 .text-section1 h4{
+        font-size: 22px;
+        margin-top: 30px;
+        margin-left: 310px;
+    }
+    .content1 .text-section1 p {
+        line-height: 1.5;
+    }
+    .content1 .text-section1 h3{
+        margin-top: 20px;
+        margin-left: 300px;
+    }
+    
+
+
+
+
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 20px;
+    font-size: 65px;
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    background-color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9em;
+}
+
+p {
+    text-align: center;
+    margin-top: 20px;
 }
