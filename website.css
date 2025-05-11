@@ -16,8 +16,9 @@
     background-color: rgb(247, 248, 248);
     filter: drop-shadow( 8px 8px 20px rgb(1, 1, 1));
     overflow: hidden;
-    transition: all ease 2s;
+    transition: 5s;
 }
 .box :hover {
     scale: 1.2;
+
 }
