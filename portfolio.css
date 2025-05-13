@@ -201,6 +201,7 @@ p {
 }
 .container1{
     display: flex;
+    font-size: 40px;
 
 }
 .img1{
