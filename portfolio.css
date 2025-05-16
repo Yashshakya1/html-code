@@ -10,6 +10,51 @@ background-color: #252323;
 color: #fff;
 }
 
+
+/* animation on yash shakya */
+.name {
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(270deg,
+      #ff6ec4,
+      #7873f5,
+      #57e0f4,
+      #ff6ec4);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+    animation: gradientAnimation 12s ease infinite;
+    letter-spacing: 0.15em;
+    filter: drop-shadow(0 0 6px #8e44ad88);
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+/* animation on yash shakya */
+
+
+
+
+
+
+
+
+/* page 1 */
+
 header {
 padding: 20px;
 background: #3f3d3d69;
@@ -102,7 +147,11 @@ text-align:right;
 padding: 20px;
 background: #111;
 }
+/* page 1 */
 
+
+
+/* page 2 */
 .content1 {
     display: flex;
     justify-content: space-between;
@@ -127,9 +176,8 @@ background: #111;
     .image-section1{
         width: 100%;
     }
-    
-    
-
+     
+/* page 2 */
 
 
 
@@ -383,6 +431,6 @@ li {
 
   
 @media(max-width :430px){
-
+    
 }
 
