@@ -176,7 +176,8 @@ background: #111;
     .image-section1{
         width: 100%;
     }
-     
+    
+    
 /* page 2 */
 
 
@@ -430,7 +431,133 @@ li {
 
 
   
-@media(max-width :430px){
+/* Media Query for devices up to 600px wide */
+@media (max-width: 600px) {
+    header {
+      padding: 15px;
+      text-align: center;
+    }
+    .name{
+        text-align: left;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+     
+    }
+  
+    nav ul li {
+      margin: 8px 0;
+    }
+    .content {
+      flex-direction: column;
+      padding: 30px 15px;
+    }
+  
+    .text-section {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 48px;
+    }
+  
+    .image-section img {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .content1 {
+      flex-direction: column;
+      padding: 30px 15px;
+    }
+  
+    .text-section1 h1 {
+      font-size: 70px;
+      margin-bottom: 20px;
+    }
     
-}
-
+  
+ 
+  
+    .content2 {
+      flex-direction: column;
+    }
+  
+    .card {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+     
+    .text-section2{
+        font-size: 25px;
+        margin-right: 30px;
+    }
+    
+    .text-section2 h1{
+        
+        
+    }
+    
+    
+    .image-section2 {
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+    }
+  
+    .img1, .img2 {
+      width: 90%;
+      height: auto;
+      padding-top: 0;
+      margin-top: 0;
+    }
+  
+    .my-project-list {
+      margin-left: 0;
+      margin-top: 40px;
+      padding-left: 20px;
+    }
+  
+    .container2 {
+      flex-direction: column;
+    }
+  
+    .image-section3 {
+      display: none;
+    }
+  
+    .content-section {
+      padding: 20px 15px;
+    }
+  
+    .social-icons {
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+  
+    .social-icon {
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+    }
+  
+    .text-section3 h1 {
+      font-size: 50px;
+    }
+  
+    .image-section4 img {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+    .container3{
+         margin-top: -200px;
+    }
+  }
+  
