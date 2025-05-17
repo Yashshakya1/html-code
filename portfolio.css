@@ -64,6 +64,7 @@ position: fixed;
 }
 
 nav ul {
+  z-index: 999;
 list-style: none;
 display: flex;
 justify-content: right;
@@ -496,12 +497,6 @@ li {
         font-size: 25px;
         margin-right: 30px;
     }
-    
-    .text-section2 h1{
-        
-        
-    }
-    
     
     .image-section2 {
       flex-direction: column;
