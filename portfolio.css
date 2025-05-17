@@ -554,8 +554,10 @@ li {
   
     .image-section4 img {
       max-width: 100%;
-      margin-bottom: 0;
-    }
+      /* margin-bottom: 0; */
+      position: sticky;
+      top: 200px;
+  }
     .container3{
          margin-top: -200px;
     }
