@@ -1,66 +1,51 @@
-body {
-    background: #121212;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+/* Sidebar Styles */
+.sidebar {
+  width: 250px; /* Width of the sidebar */
+  background-color: #3f3d3d; /* Background color */
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  height: 100%; /* Full height */
+  padding: 20px; /* Padding */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  display: block; /* Default display */
+  z-index: 100; /* Ensure it is above other content */
+}
+
+/* Hide sidebar on small screens */
+@media (max-width: 600px) {
+  .sidebar {
+      display: none; /* Hide sidebar */
   }
-  .social-icons {
-    display: flex;
-    gap: 24px;
+
+  #check:checked ~ .sidebar {
+      display: block; /* Show sidebar when checkbox is checked */
+      position: absolute; /* Position it absolutely */
+      top: 0; /* Align to the top */
+      left: 0; /* Align to the left */
+      width: 100%; /* Full width */
+      height: 100%; /* Full height */
+      background-color: #3f3d3d; /* Background color */
+      padding: 20px; /* Padding */
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
   }
-  .social-icon {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 28px;
-    cursor: pointer;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 0 8px rgba(255,255,255,0.1);
+
+  nav ul {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      display: none; /* Hide the nav items */
   }
-  
-  /* Brand colors */
-  .facebook {
-    background: #3b5998;
+
+  nav ul li {
+      margin: 8px 0; /* Adjust margin */
   }
-  .twitter {
-    background: #1da1f2;
+
+  #check:checked ~ #navbar nav ul {
+      display: block; /* Show nav items when checkbox is checked */
+      width: 100%; /* Full width */
+      position: absolute; /* Position it absolutely */
+      left: 0; /* Align to the left */
+      top: 70px; /* Position below the header */
+      background-color: bisque; /* Background color */
   }
-  .instagram {
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-  }
-  .linkedin {
-    background: #0077b5;
-  }
-  .github {
-    background: #333;
-  }
-  
-  /* Glow effect on hover */
-  .social-icon.facebook:hover {
-    box-shadow: 0 0 15px 5px #3b5998;
-    transform: scale(1.1);
-  }
-  .social-icon.twitter:hover {
-    box-shadow: 0 0 15px 5px #1da1f2;
-    transform: scale(1.1);
-  }
-  .social-icon.instagram:hover {
-    box-shadow: 0 0 15px 5px #d6249f;
-    transform: scale(1.1);
-  }
-  .social-icon.linkedin:hover {
-    box-shadow: 0 0 15px 5px #0077b5;
-    transform: scale(1.1);
-  }
-  .social-icon.github:hover {
-    box-shadow: 0 0 15px 5px #666;
-    transform: scale(1.1);
-  }
-  
+}
