@@ -489,7 +489,7 @@ li {
       margin-bottom: 20px;
     }
     .text-section1 h3{
-      margin-left: px;
+      /* margin-left: px; */
     }
     .content2 {
       flex-direction: column;
